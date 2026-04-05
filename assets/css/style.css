@@ -10,9 +10,24 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.75;
   color: white;
-  background : #000000;
+  background: #000000;
+}
+
+p, li, .portfolio-description, .portfolio-info, .about .content, .resume .resume-item {
+  text-align: justify;
+}
+
+.resume .resume-item ul li {
+  text-align: left;
+}
+
+p, li {
+  line-height: 1.75;
 }
 
 a {
@@ -31,7 +46,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 /*--------------------------------------------------------------
@@ -490,7 +507,7 @@ section {
   line-height: 18px;
   font-size: 18px;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: none;
   font-family: "Poppins", sans-serif;
   color: white;
   margin-bottom: 10px;
@@ -658,14 +675,14 @@ section {
 .portfolio-wrap {
   position: relative;
   overflow: hidden;
-  display: flex; /* Flex container */
-  justify-content: center; /* Center children horizontally */
-  align-items: center; /* Center children vertically */
+  height: 260px;
 }
 
 .portfolio-wrap img {
-  max-width: 80%; /* Adjust the size as needed */
-  margin: 0 auto; /* Center the image */
+  width: 100%;
+  height: 100% !important;
+  object-fit: cover;
+  display: block;
 }
 
 .hover-title {
@@ -684,6 +701,28 @@ section {
 
 .portfolio-wrap:hover .hover-title {
   transform: translateY(0);
+}
+
+/*--------------------------------------------------------------
+# Vision box
+--------------------------------------------------------------*/
+.vision-box {
+  border-left: 4px solid #888888;
+  background: #111111;
+  padding: 18px 24px;
+  margin-bottom: 28px;
+  border-radius: 0 6px 6px 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+  font-style: italic;
+}
+
+/*--------------------------------------------------------------
+# Publication list spacing
+--------------------------------------------------------------*/
+.portfolio-info ol li {
+  margin-bottom: 8px;
 }
 
 /*--------------------------------------------------------------
