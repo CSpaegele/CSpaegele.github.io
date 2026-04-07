@@ -86,7 +86,7 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Singular Optics for Advanced Sensing</h2>
+          <h2>Integrated Quantum Sensors</h2>
           <ol>
             <li><a href="index.html">Home</a></li>
           </ol>
@@ -112,55 +112,40 @@
 
 
 <div style="border-left: 4px solid #888888; background: #111111; padding: 18px 24px; margin-bottom: 28px; border-radius: 0 6px 6px 0; font-size: 1rem; line-height: 1.8; color: #e0e0e0; font-style: italic;">
-  Structured electromagnetic fields, including singular and near-singular configurations, underpin a wide range of powerful sensing and imaging techniques. Beyond their applications, they also provide a valuable framework for studying the topology and symmetry of light, linking photonics to broader concepts in mathematics and physics. Improving our ability to generate, control, and stabilize such field structures, and to design their topology, dimensionality, and robustness, offers a promising route toward new approaches in sensing, metrology, imaging, and light–matter interaction beyond conventional optical limits.
+  Dense ensembles of quantum spins are among the most sensitive probes of magnetic fields ever devised, but their full potential is locked behind a fundamental challenge: positional disorder in solid-state systems induces rapid dephasing that prevents coherent, collective behavior. Integrating nanoscale magnetic gradient control with engineered many-body interactions offers a route to unlock this potential, enabling disorder-robust collective dynamics that translate directly into sensing and imaging capabilities beyond the reach of classical systems.
 </div>
 
+<h2>Collective Quantum Dynamics for Enhanced Sensing</h2>
+
 <p>
-Structured electromagnetic fields are central to many advanced optical technologies, including super-resolution microscopy, metrology, trapping, and wavefront shaping. Optical singularities (points, lines, or manifolds where a field property such as phase, polarization, or spin becomes undefined) are a particularly important subset of these structures. Their interest lies not only in the sharp field variations and confinement they generate, but also in the fact that they are often governed by topological and symmetry-based constraints. As a result, they offer both a practical route to enhanced optical functionality and a useful framework for probing fundamental properties of electromagnetic fields.
+Quantum sensors based on dense spin ensembles offer exceptional magnetic field sensitivity, with applications ranging from nanoscale imaging of biological systems to probing condensed matter phases. The underlying resource is the quantum coherence of a large number of interacting spins, but harnessing this resource requires overcoming a key obstacle: in solid-state systems, spins are positionally disordered, and the resulting variation in local coupling strengths drives rapid dephasing that destroys collective behavior before it can be exploited.
 </p>
 
 <p>
-A canonical example is STED microscopy <a href="https://opg.optica.org/ol/abstract.cfm?uri=ol-19-11-780">[1]</a>, where a phase singularity produces a donut-shaped depletion beam and allows fluorescence imaging beyond the diffraction limit. More broadly, structured fields containing singular and near-singular features can support localized dark states, steep gradients, and nontrivial spatial correlations, all of which are relevant for sensing and imaging. This motivates the development of platforms that can generate, probe, and control such field structures in a systematic and designable way.
-</p>
-
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="portfolio-full-width-image">
-          <img src="assets/img/research/fab.png" class="img-fluid" alt="Research Image">
-          <p class="image-caption" style="font-style: italic;">Optical image (left) and SEM images (right) of a metasurface used in [1]. Each of the nanostructures acts as a waveplate, locally controlling both phase and polarization of the transmitted wavefront. Scale bars are 250um and 1um, respectively.</p>
-        </div>
-      </div>
-    </div>
-<p></p>
-
-<p>
-My research focuses on observing, engineering, and controlling electromagnetic fields at the nanoscale, with the goal of accessing structured field configurations that are difficult to realize or study with conventional optical tools. This includes not only the creation of isolated singularities, but also the design of their topology, dimensionality, stability, spatial arrangement, and collective behavior. Nanophotonic systems are particularly attractive in this context because they provide access to subwavelength light structuring and local control over the phase, polarization, and spectral response of optical fields.
+Collective many-body dynamics (where an extended quantum system evolves in a coherent, correlated fashion) can in principle reduce quantum projection noise below the standard quantum limit and amplify weak signals. Such dynamics have been demonstrated in ultracold atomic platforms with engineered all-to-all interactions, but realizing them in a practical, room-temperature solid-state sensor has remained out of reach due to disorder.
 </p>
 
 <p>
-Using such platforms, we have experimentally realized new classes of topologically stable optical singularities [1], engineered arrays of dark points for trapping-related applications [2], and, more recently, explored collective effects in singular optics, including superluminal correlations in ensembles of optical phase singularities [4]. Together, these works point toward a broader program in which nanoscale electromagnetic fields are not only observed, but designed and manipulated with increasing precision, enabling new approaches to imaging, sensing, and light–matter control.
+In [1], we demonstrate that this barrier can be overcome by combining two ingredients: time-dependent nanoscale magnetic field gradients and Floquet-engineered SU(2)-symmetric spin interactions. The gradient imprints a spatially modulated spin texture (a conical spin spiral) across a dense ensemble of nitrogen-vacancy (NV) centers in diamond. Under a Floquet pulse sequence that engineers an SU(2)-symmetric Heisenberg interaction, nearby spins in a long-wavelength spiral are nearly co-aligned, which suppresses the divergent local energy scales responsible for disorder-induced dephasing. The spiral mode thereby becomes a protected, slow hydrodynamic mode of the interacting system.
 </p>
 
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="portfolio-full-width-image">
-          <img src="assets/img/research/singularity_summary.png" class="img-fluid" alt="Research Image">
-          <p class="image-caption" style="font-style: italic;">Extending the library of optical singularities: Topologically protected, complete polarization singularities. A metasurface can be used to create a topologically protected singularity at the focus of a loosely focusing lens (A). The singularity is a single dark point in space and wavelength (B-C) and its immediate surrounding contains all polarizations (and phases) of light (D). This 'protection shield' makes it stable against perturbations.</p>
-        </div>
-      </div>
-    </div>
+<p>
+The resulting dynamics closely resemble one-axis twisting (OAT), a canonical model for metrologically useful entanglement generation, with a precession rate that follows a cosine dependence on the spiral cone angle, and a quality factor &omega;/&gamma; that clearly exceeds the theoretical limit set by local dynamics in a disordered Ising system. These observations demonstrate collective nonlinear dynamics in a positionally disordered three-dimensional dipolar spin system for the first time.
+</p>
 
 <p>
+A key enabler of this work is the integration of the spin ensemble with a custom two-layer nanofabricated gradient chip. Pulsed currents through micron-scale gold coils generate magnetic field gradients up to ~2.2 mT/&micro;m, switchable in ~15 ns, enabling both the preparation of nanoscale spin textures and Fourier magnetic imaging (FMI) of the spin polarization with sub-20 nm spatial resolution. Two device geometries are used: a bulk diamond plate and a high-density diamond nanobeam, the latter shaped to enhance gradient homogeneity and fluorescence collection.
+</p>
 
+<p>
+Together, these results establish a platform for interaction-enhanced quantum metrology and nanoscale magnetic resonance imaging under ambient conditions. The approach is scalable: theoretical analysis predicts that the quality factor can grow as &radic;N with system size due to the separation of timescales between spiral relaxation and exchange-driven twisting, pointing toward substantial, practical metrological gain with dense solid-state spin sensors.
+</p>
+
+<p>
 <u>Related publications:</u> * denotes equal contribution
-
 </p>
-[1] <u>Spaegele, C.M.</u>, Tamagnone, M., Lim, S.W.D., Ossiander, M., Meretska, M.L. and Capasso, F., 2023. Topologically protected optical polarization singularities in four-dimensional space. <strong>Science Advances</strong>, 9(24), p.eadh0369.<p></p>
-[2] Lim, S.W.D., Park, J.S., Kazakov, D., <u>Spaegele, C.M.</u>, Dorrah, A.H., Meretska, M.L. and Capasso, F., 2023. Point singularity array with metasurfaces. <strong>Nature Communications</strong>, 14(1), p.3237.
-<p></p>
-[3] Lim, S.W.D.* and <u>Sp&#228;gele, C.M.</u>* and Capasso, F. Topology driven applications in optical singularities. arXiv preprint arXiv:2406.00784.
-<p></p>
-[4] Bucher, T., Gorlach, A., Niedermayr, A., Yan, Q., Nahari, H., Wang, K., Ruimy, R., Adiv, Y., Yannai, M., Lenkiewicz Abudi, T., Janzen, E., <u>Spaegele, C.M.</u>, Roques-Carmes, C., Edgar, C., Koppens, F., Vanacore, G., Herzig, H., Sheinfux, Tsesses, S. and Kaminer, I. Superluminal Correlations in Ensembles of Optical Phase Singularities. <strong>Nature</strong> 651, 920&ndash;926 (2026).
+
+[1] Put, P.*, Leitao, N.T.*, Gao, H.*, <u>Spaegele, C.M.*</u>, Makarova, O., Hughes Wyatt, L.B., Maccabe, A.C., Mammen, M., Machielse, B., Zhou, H., Pustelny, S., Bleszynski Jayich, A.C., Capasso, F., Martin, L.S., Park, H. and Lukin, M.D. Collective many-body dynamics in a solid-state quantum sensor controlled through nanoscale magnetic gradients. arXiv:2506.11920 (2025).
 
         </div>
       </div>
